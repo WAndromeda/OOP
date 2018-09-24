@@ -62,15 +62,13 @@ class Practice{
         for (int i = 0; i < b.length; i++)
             b[i] = new Boolean(false);
         Random random = new Random();
-        boolean flag = true;
-        int i = 0, cnt = 0;
-        while(cnt != 10) {
+        int i = 0;
+        while(i != 10) {
             int t = random.nextInt(10);
             if (!b[t]){
                 b[t] = true;
                 a[i % 2].addFirst(t);
                 i++;
-                cnt++;
             }
         }
         return a;
